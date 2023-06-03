@@ -1,6 +1,6 @@
 package ir.reversedev.documentbag.ui.theme
 
-import android.provider.CalendarContract.Colors
+import androidx.compose.material3.ColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
@@ -13,12 +13,12 @@ val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
 
 
-val Colors.primaryColor : Color
-@Composable
-get() = Color(0xFF03A9F4)
-val Colors.primaryVariantColor : Color
+val ColorScheme.primaryColor: Color
+    @Composable
+    get() = Color(0xFF03A9F4)
+val ColorScheme.primaryVariantColor: Color
     @Composable
     get() = Color(0xFF0277BD)
-val Colors.onPrimaryColor : Color
+val ColorScheme.onPrimaryColor: Color
     @Composable
     get() = Color(0xFFFFFFFF)

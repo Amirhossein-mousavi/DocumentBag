@@ -17,6 +17,7 @@ import androidx.navigation.NavHostController
 import ir.reversedev.documentbag.R
 import ir.reversedev.documentbag.navigation.Screen
 import ir.reversedev.documentbag.ui.components.Loading3dots
+import ir.reversedev.documentbag.ui.theme.primaryColor
 import kotlinx.coroutines.delay
 
 @Composable
@@ -32,7 +33,7 @@ fun SplashScreen(navController: NavHostController) {
 fun Splash() {
     Box(
         modifier = Modifier
-            .background(MaterialTheme.colorScheme.primary)
+            .background(MaterialTheme.colorScheme.primaryColor)
             .fillMaxSize(),
         contentAlignment = Alignment.Center
     )
@@ -43,10 +44,11 @@ fun Splash() {
             modifier = Modifier.size(250.dp)
         )
     }
-    Box(modifier = Modifier
-        .fillMaxSize()
-        .padding(20.dp) ,
-    contentAlignment = Alignment.BottomCenter
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(20.dp),
+        contentAlignment = Alignment.BottomCenter
     ) {
         Loading3dots(isDark = false)
     }
