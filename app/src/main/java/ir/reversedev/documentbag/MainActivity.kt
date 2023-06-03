@@ -1,5 +1,6 @@
 package ir.reversedev.documentbag
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -9,22 +10,25 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import ir.reversedev.documentbag.navigation.SetupNavGraph
 import ir.reversedev.documentbag.ui.theme.DocumentBagTheme
 
 class MainActivity : ComponentActivity() {
 
-    private lateinit var navController : NavHostController
+    private lateinit var navController: NavHostController
+
+    @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             DocumentBagTheme {
                 navController = rememberNavController()
-                Scaffold (
+                Scaffold(
                     bottomBar = {
                         //TODO BOTTOM BAR
                     }
-                        ) {
-
+                ) {
+                    SetupNavGraph(navController = navController)
 
                 }
             }
