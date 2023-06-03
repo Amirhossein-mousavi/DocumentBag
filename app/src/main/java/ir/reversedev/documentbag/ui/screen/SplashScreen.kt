@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -15,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import ir.reversedev.documentbag.R
 import ir.reversedev.documentbag.navigation.Screen
+import ir.reversedev.documentbag.ui.components.Loading3dots
 import kotlinx.coroutines.delay
 
 @Composable
@@ -40,5 +42,12 @@ fun Splash() {
             contentDescription = null,
             modifier = Modifier.size(250.dp)
         )
+    }
+    Box(modifier = Modifier
+        .fillMaxSize()
+        .padding(20.dp) ,
+    contentAlignment = Alignment.BottomCenter
+    ) {
+        Loading3dots(isDark = false)
     }
 }
