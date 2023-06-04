@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">Document Bag</string>
+    <string name="app_name">کیف مدارک</string>
+    <string name="document">مدارک</string>
+    <string name="note">یاداشت</string>
+    <string name="settings">تنظیمات</string>
 </resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Document ‌Bag</string>
+    <string name="document">Document</string>
+    <string name="note">Note</string>
+    <string name="settings">Settings</string>
+</resources>
