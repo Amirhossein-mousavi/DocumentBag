@@ -3,4 +3,12 @@
     <string name="document">مدارک</string>
     <string name="note">یاداشت</string>
     <string name="settings">تنظیمات</string>
+    <string name="birthـcertificate">شناسنامه</string>
+    <string name="national_card">کارت ملی</string>
+    <string name="debitـcard">کارت بانکی</string>
+    <string name="driving_licence">گواهینامه رانندگی</string>
+    <string name="military_service_license">پایان خدمت</string>
+    <string name="student_card">کارت دانشجویی</string>
+    <string name="car_card">کارت ماشین</string>
+    <string name="passport">گذرنامه</string>
 </resources>

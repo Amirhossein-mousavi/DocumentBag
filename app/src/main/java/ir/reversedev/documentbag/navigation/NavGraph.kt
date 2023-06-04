@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import ir.reversedev.documentbag.ui.screen.SplashScreen
+import ir.reversedev.documentbag.ui.screen.home.HomeScreen
 
 @Composable
 fun SetupNavGraph(navController: NavHostController) {
@@ -14,7 +15,9 @@ fun SetupNavGraph(navController: NavHostController) {
             SplashScreen(navController = navController)
         }
 
-        composable(Screen.Home.route) {}
+        composable(Screen.Home.route) {
+            HomeScreen(navController = navController)
+        }
 
         composable(Screen.Note.route) {}
 

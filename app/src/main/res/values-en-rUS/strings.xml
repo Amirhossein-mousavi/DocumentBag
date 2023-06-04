@@ -4,4 +4,12 @@
     <string name="document">Document</string>
     <string name="note">Note</string>
     <string name="settings">Settings</string>
+    <string name="birthـcertificate">Birth certificate</string>
+    <string name="national_card">National card</string>
+    <string name="debitـcard">Debit card</string>
+    <string name="driving_licence">Driving licence</string>
+    <string name="military_service_license">Service license</string>
+    <string name="student_card">Student card</string>
+    <string name="car_card">Car card</string>
+    <string name="passport">Passport</string>
 </resources>
