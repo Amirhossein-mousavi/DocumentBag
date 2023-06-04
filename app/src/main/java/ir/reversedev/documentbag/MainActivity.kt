@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import ir.reversedev.documentbag.navigation.BottomNavigationBar
 import ir.reversedev.documentbag.navigation.SetupNavGraph
 import ir.reversedev.documentbag.ui.theme.DocumentBagTheme
 
@@ -25,7 +26,9 @@ class MainActivity : ComponentActivity() {
                 navController = rememberNavController()
                 Scaffold(
                     bottomBar = {
-                        //TODO BOTTOM BAR
+                        BottomNavigationBar(navController = navController) {
+                            navController.navigate(it.route)
+                        }
                     }
                 ) {
                     SetupNavGraph(navController = navController)
