@@ -1,5 +1,6 @@
 package ir.reversedev.documentbag.ui.theme
 
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.ColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
@@ -22,3 +23,10 @@ val ColorScheme.primaryVariantColor: Color
 val ColorScheme.onPrimaryColor: Color
     @Composable
     get() = Color(0xFFFFFFFF)
+
+val ColorScheme.selectedBottomBar: Color
+    @Composable
+    get() = if (isSystemInDarkTheme()) Color(0xFF43474C) else Color(0xFF575A5E)
+val ColorScheme.unSelectedBottomBar: Color
+    @Composable
+    get() = if (isSystemInDarkTheme()) Color(0xFFA4A1A1) else Color(0xFF85878A)
