@@ -20,11 +20,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
+import ir.reversedev.documentbag.R
 import ir.reversedev.documentbag.ui.theme.selectedBottomBar
 import ir.reversedev.documentbag.ui.theme.unSelectedBottomBar
 
@@ -36,19 +38,19 @@ fun BottomNavigationBar(
 ) {
     val items = listOf(
         BottomNavItem(
-            name = "home",
+            name = stringResource(id = R.string.document),
             route = Screen.Home.route,
             selectedIcon = Icons.Filled.Home,
             deSelectedIcon = Icons.Outlined.Home
         ),
         BottomNavItem(
-            name = "note",
+            name = stringResource(id = R.string.note),
             route = Screen.Note.route,
             selectedIcon = Icons.Filled.Edit,
             deSelectedIcon = Icons.Outlined.Edit
         ),
         BottomNavItem(
-            name = "setting",
+            name = stringResource(id = R.string.settings),
             route = Screen.Setting.route,
             selectedIcon = Icons.Filled.Settings,
             deSelectedIcon = Icons.Outlined.Settings
