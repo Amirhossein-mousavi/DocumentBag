@@ -82,7 +82,7 @@ fun HomeScreenItem(
                 .clip(MaterialTheme.shapes.roundedCornerShapeMedium)
                 .background(Color.LightGray)
                 .clickable {
-                    onClick
+                    onClick()
                 }
         ) {
             Column(
