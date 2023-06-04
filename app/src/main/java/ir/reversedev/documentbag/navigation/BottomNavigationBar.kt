@@ -74,7 +74,7 @@ fun BottomNavigationBar(
                             Text(
                                 text = item.name,
                                 textAlign = TextAlign.Center,
-                                style = MaterialTheme.typography.headlineLarge,
+                                style = MaterialTheme.typography.titleSmall,
                                 fontWeight = FontWeight.Bold,
                                 modifier = Modifier.padding(top = 5.dp)
                             )
