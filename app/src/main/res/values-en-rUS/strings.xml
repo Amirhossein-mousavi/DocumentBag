@@ -19,4 +19,8 @@
     <string name="rate_us">Rate us</string>
     <string name="our_applications">Our applications</string>
     <string name="info">Info</string>
+    <string name="select_your_language">Select your language.</string>
+    <string name="persian">Persian</string>
+    <string name="english">English</string>
+    <string name="current_lang">The current language of application is English.</string>
 </resources>

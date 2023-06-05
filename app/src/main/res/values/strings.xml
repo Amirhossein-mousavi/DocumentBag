@@ -18,4 +18,8 @@
     <string name="rate_us">به ما امتیاز دهید</string>
     <string name="our_applications">برنامه های ما</string>
     <string name="info">اظلاعات</string>
+    <string name="select_your_language">زبان خود را انتخاب کنید.</string>
+    <string name="persian">فارسی</string>
+    <string name="english">انگلیسی</string>
+    <string name="current_lang">زبان فعلی اپلیکیشن فارسی است.</string>
 </resources>

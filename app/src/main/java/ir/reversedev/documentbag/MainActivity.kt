@@ -36,8 +36,8 @@ class MainActivity : ComponentActivity() {
                 AppConfig()
                 // region set direction for application views
                 val direction =
-                    if (USER_SERVICE == PERSIAN_LANG) LayoutDirection.Ltr
-                    else LayoutDirection.Rtl
+                    if (USER_LANGUAGE == PERSIAN_LANG) LayoutDirection.Rtl
+                    else LayoutDirection.Ltr
                 // endregion set direction for application views
                 // set locale for application
                 LocaleUtils.setLocale(LocalContext.current, USER_LANGUAGE)

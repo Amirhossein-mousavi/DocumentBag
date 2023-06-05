@@ -16,10 +16,10 @@ val Pink40 = Color(0xFF7D5260)
 
 val ColorScheme.primaryColor: Color
     @Composable
-    get() = Color(0xFF03A9F4)
+    get() = Color(0xFF7A3DB4)
 val ColorScheme.primaryVariantColor: Color
     @Composable
-    get() = Color(0xFF0277BD)
+    get() = Color(0xFF524798)
 val ColorScheme.onPrimaryColor: Color
     @Composable
     get() = Color(0xFFFFFFFF)
