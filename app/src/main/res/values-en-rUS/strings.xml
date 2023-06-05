@@ -23,4 +23,9 @@
     <string name="persian">Persian</string>
     <string name="english">English</string>
     <string name="current_lang">The current language of application is English.</string>
+    <string name="light_theme">Light theme</string>
+    <string name="defaul">Default</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="application_theme">Application theme</string>
 </resources>

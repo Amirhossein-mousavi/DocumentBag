@@ -1,5 +1,6 @@
 package ir.reversedev.documentbag.viewmodel
 
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -16,6 +17,8 @@ class DataStoreViewModel @Inject constructor(
 
     companion object {
         const val USER_LANGUAGE_KEY = "USER_LANGUAGE_KEY"
+        const val USER_THEME_KEY = "USER_THEME_KEY"
+        const val THEME_IS_DEFAULT_KEY = "THEME_IS_DEFAULT_KEY"
     }
 
     /**
@@ -32,5 +35,31 @@ class DataStoreViewModel @Inject constructor(
         repository.getString(USER_LANGUAGE_KEY) ?: PERSIAN_LANG
     }
     // endregion user language
+
+    /**
+     * with this function we can get and put user custom theme
+     */
+
+    // region save and get user theme
+    fun isSystemDark(value: Boolean) {
+        viewModelScope.launch {
+            repository.putBoolean(USER_THEME_KEY, value)
+        }
+    }
+
+    fun themeIsDefault(value: Boolean) {
+        viewModelScope.launch {
+            repository.putBoolean(THEME_IS_DEFAULT_KEY, value)
+        }
+    }
+
+    fun themeIsDefault(): Boolean =
+        runBlocking { repository.getBoolean(THEME_IS_DEFAULT_KEY) ?: true }
+
+    fun isSystemDark(): Boolean = runBlocking {
+        repository.getBoolean(USER_THEME_KEY) ?: false
+    }
+
+    // endregion save and get user theme
 
 }

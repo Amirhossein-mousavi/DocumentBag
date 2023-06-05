@@ -22,4 +22,9 @@
     <string name="persian">فارسی</string>
     <string name="english">انگلیسی</string>
     <string name="current_lang">زبان فعلی اپلیکیشن فارسی است.</string>
+    <string name="light_theme">تم روشن</string>
+    <string name="defaul">پیشفرض</string>
+    <string name="confirm">تایید</string>
+    <string name="cancel">لغو</string>
+    <string name="application_theme">تم اپلیکیشن</string>
 </resources>

@@ -4,8 +4,12 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.viewModels
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.LayoutDirection
@@ -15,21 +19,29 @@ import dagger.hilt.android.AndroidEntryPoint
 import ir.reversedev.documentbag.navigation.BottomNavigationBar
 import ir.reversedev.documentbag.navigation.SetupNavGraph
 import ir.reversedev.documentbag.ui.components.AppConfig
-import ir.reversedev.documentbag.ui.theme.DocumentBagTheme
+import ir.reversedev.documentbag.ui.components.MyAppTheme
 import ir.reversedev.documentbag.utils.Constants.PERSIAN_LANG
 import ir.reversedev.documentbag.utils.Constants.USER_LANGUAGE
 import ir.reversedev.documentbag.utils.LocaleUtils
+import ir.reversedev.documentbag.viewmodel.DataStoreViewModel
 
 @AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+class MainActivity() : ComponentActivity() {
 
     private lateinit var navController: NavHostController
 
+    private val dataStoreViewModel: DataStoreViewModel by viewModels()
     @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            DocumentBagTheme {
+            val isDarkTheme = remember {
+                mutableStateOf(dataStoreViewModel.isSystemDark())
+            }
+            MyAppTheme(
+                isDarkTheme =
+                if (!dataStoreViewModel.themeIsDefault()) isDarkTheme.value else isSystemInDarkTheme()
+            ) {
                 // set value for navController
                 navController = rememberNavController()
                 // region set default application language and direction
