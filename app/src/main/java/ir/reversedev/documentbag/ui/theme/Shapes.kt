@@ -8,3 +8,5 @@ import androidx.compose.ui.unit.dp
 
 val Shapes.roundedCornerShapeMedium: Shape
     @Composable get() = RoundedCornerShape(16.dp)
+val Shapes.roundedCornerShapeSmall: Shape
+    @Composable get() = RoundedCornerShape(4.dp)

@@ -12,4 +12,11 @@
     <string name="student_card">Student card</string>
     <string name="car_card">Car card</string>
     <string name="passport">Passport</string>
+    <string name="change_language">Change language</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="security">Security</string>
+    <string name="about_us">About us</string>
+    <string name="rate_us">Rate us</string>
+    <string name="our_applications">Our applications</string>
+    <string name="info">Info</string>
 </resources>

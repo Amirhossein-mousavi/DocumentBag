@@ -30,3 +30,8 @@ val ColorScheme.selectedBottomBar: Color
 val ColorScheme.unSelectedBottomBar: Color
     @Composable
     get() = if (isSystemInDarkTheme()) Color(0xFFA4A1A1) else Color(0xFF85878A)
+
+val ColorScheme.bgCard: Color
+    @Composable get() = if (isSystemInDarkTheme()) Color(0xFF303030) else Color(0xFFFCFCFC)
+val ColorScheme.textColor: Color
+    @Composable get() = if (isSystemInDarkTheme()) Color(0xFFFCFCFC) else Color(0xFF303030)

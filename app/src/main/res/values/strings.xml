@@ -11,4 +11,11 @@
     <string name="student_card">کارت دانشجویی</string>
     <string name="car_card">کارت ماشین</string>
     <string name="passport">گذرنامه</string>
+    <string name="change_language">تغییر زبان</string>
+    <string name="dark_theme">تم تاریک</string>
+    <string name="security">امنیت</string>
+    <string name="about_us">درباره ما</string>
+    <string name="rate_us">به ما امتیاز دهید</string>
+    <string name="our_applications">برنامه های ما</string>
+    <string name="info">اظلاعات</string>
 </resources>
