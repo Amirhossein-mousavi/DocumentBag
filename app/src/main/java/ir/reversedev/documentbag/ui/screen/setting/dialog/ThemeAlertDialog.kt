@@ -1,4 +1,4 @@
-package ir.reversedev.documentbag.ui.screen.setting
+package ir.reversedev.documentbag.ui.screen.setting.dialog
 
 import android.app.Activity
 import android.content.Intent
@@ -31,6 +31,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import ir.reversedev.documentbag.MainActivity
 import ir.reversedev.documentbag.R
+import ir.reversedev.documentbag.ui.screen.setting.openThemeDialogState
 import ir.reversedev.documentbag.ui.theme.onPrimaryColor
 import ir.reversedev.documentbag.ui.theme.primaryColor
 import ir.reversedev.documentbag.ui.theme.textColor
